@@ -1,0 +1,32 @@
+.login {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 60px 68px 40px;
+  border: 2px solid #fff;
+  width: 300px;
+  min-height: 700px;
+  border-radius: 40px;
+  .login__container--form {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 14px;
+    }
+  }
+  .login__container--remember-me {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    a {
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+}
