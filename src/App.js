@@ -1,13 +1,17 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import { BrowserRouter, Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import SearchBox from "./components/SearchBox/SearchBox";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header></Header>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Header />
+        <SearchBox />
+      </BrowserRouter>
+    </div>
   );
 }
 

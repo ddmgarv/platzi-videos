@@ -1,0 +1,33 @@
+.searchBox {
+  text-align: center;
+  margin-top: 100px;
+  .searchBox__text {
+    color: #fff;
+  }
+  .searchBox__input {
+    width: 70%;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    color: #fff;
+    padding: 0.75rem 1.2rem;
+    font-size: 17px;
+    margin-top: 25px;
+    font-weight: 500;
+    transition: all 0.25s;
+    &::placeholder {
+      color: #fff;
+      font-weight: 500;
+      font-size: 17px;
+    }
+    &:focus {
+      transition: all 0.25s;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+      background-color: transparent;
+    }
+  }
+}
