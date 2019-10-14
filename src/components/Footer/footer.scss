@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: #ab88ff;
+  a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 30px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+@media (max-width: 576.98px) {
+  .footer {
+    justify-content: space-around;
+    padding-left: 10px;
+    a {
+      padding-left: 0;
+    }
+  }
+}

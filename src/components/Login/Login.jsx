@@ -27,7 +27,7 @@ const Login = () => (
         Iniciar sesión con Twitter
       </div>
     </div>
-    <p>
+    <p className="login__container--register">
       No tienes ninguna cuenta, <Link>Regístrate</Link>
     </p>
   </section>

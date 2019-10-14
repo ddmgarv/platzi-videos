@@ -5,11 +5,11 @@ import Header from "./components/Header/Header";
 import Carousel from "./components/Carousel/Carousel";
 import Login from "./components/Login/Login";
 import Footer from "./components/Footer/Footer";
-import "./styles.css";
+import "./styles.scss";
 
 class App extends Component {
   state = {
-    loggedIn: false
+    loggedIn: true
   };
   renderApp() {
     return (
@@ -17,7 +17,7 @@ class App extends Component {
         <BrowserRouter>
           <Header loggedIn={true} />
           <SearchBox />
-          <Carousel />
+          <Carousel title={"Mi Lista"} />
           <Footer />
         </BrowserRouter>
       </Fragment>
