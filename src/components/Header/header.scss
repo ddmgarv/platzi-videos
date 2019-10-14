@@ -4,28 +4,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .header__img {
     width: 200px;
     margin-top: 10px;
     margin-left: 10px;
   }
   .header__menu {
-    margin-right: 30px;
+    margin-right: 40px;
     font-size: 14px;
     .header__menu--profile {
-      margin-right: 8px;
-      width: 40px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      position: absolute;
-      width: 100px;
-      text-align: right;
-      margin: 0 0 0 -54px;
-      a {
+      width: auto;
+      display: flex;
+      position: relative;
+      .header__menu--img {
+        width: 45px;
+        height: 45px;
+      }
+      .header__menu--text {
+        margin-left: 15px;
         color: #fff;
-        text-decoration-line: none;
+      }
+      ul {
+        display: none;
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        top: 30px;
+        width: 100px;
+        text-align: right;
+        li {
+          margin: 10px 0px;
+          a {
+            color: #fff;
+          }
+        }
+      }
+      &:hover ul {
+        display: block;
       }
     }
   }

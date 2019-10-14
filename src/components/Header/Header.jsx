@@ -8,17 +8,17 @@ function Header() {
       <img src={platziVideoIcon} alt="" className="header__img" />
       <div className="header__menu">
         <div className="header__menu--profile">
-          <img src={userIcon} alt="" className="header__img--menu" />
+          <img src={userIcon} alt="" className="header__menu--img" />
           <p className="header__menu--text">Perfil</p>
+          <ul>
+            <li>
+              <Link>Cuenta</Link>
+            </li>
+            <li>
+              <Link>Cerrar Sesión</Link>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <Link>Cuenta</Link>
-          </li>
-          <li>
-            <Link>Cerrar Sesión</Link>
-          </li>
-        </ul>
       </div>
     </header>
   );
